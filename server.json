@@ -1,6 +1,6 @@
 {
-	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "AWS in Action: chapter 4",
+	"AWSTemplateFormatVersion": "2019-01-25",
+	"Description": "TA OSS FIRST CloudFormation Blueprint Template",
 	"Parameters": {
 		"KeyName": {
 			"Description": "Key Pair name",
@@ -20,19 +20,6 @@
 			"Type": "String",
 			"Default": "t2.micro",
 			"AllowedValues": ["t2.micro", "t2.small", "t2.medium"]
-		}
-	},
-	"Mappings": {
-		"EC2RegionMap": {
-			"ap-northeast-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-cbf90ecb"},
-			"ap-southeast-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-68d8e93a"},
-			"ap-southeast-2": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-fd9cecc7"},
-			"eu-central-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-a8221fb5"},
-			"eu-west-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-a10897d6"},
-			"sa-east-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-b52890a8"},
-			"us-east-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-1ecae776"},
-			"us-west-1": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-d114f295"},
-			"us-west-2": {"AmazonLinuxAMIHVMEBSBacked64bit": "ami-e7527ed7"}
 		}
 	},
 	"Resources": {
